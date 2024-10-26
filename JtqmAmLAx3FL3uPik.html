@@ -1,0 +1,271 @@
+<html><head><base href="https://geramex-rehab.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transforming Caregiving | Geramex Mobile Rehab Concept</title>
+<style>
+:root {
+    --primary: #2c5282;
+    --secondary: #4299e1;
+    --accent: #fbd38d;
+    --text: #2d3748;
+    --success: #48bb78;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.hero {
+    background: linear-gradient(rgba(44, 82, 130, 0.95), rgba(44, 82, 130, 0.85)),
+                url('images/caregiving-hero.jpg');
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
+
+.mission-statement {
+    background: #f8fafc;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.highlight-text {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.registration-modal {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.bank-details {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--success);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#registrationModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: white;
+    margin: 5% auto;
+    padding: 2rem;
+    max-width: 500px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+    <div class="container">
+        <h1>Transforming Caregiving:<br>A Professional Journey</h1>
+        <p class="highlight-text" style="font-size: 1.5rem; margin-bottom: 2rem;">
+            An Inhome Geriatric Care Initiative
+        </p>
+        <button onclick="showRegistration()" class="cta-button">Register Now</button>
+    </div>
+</div>
+
+<div class="mission-statement">
+    <div class="container">
+        "Together we can change the Narrative of Caregiving in Nigeria and Beyond"
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="card">
+            <h2>Event Details</h2>
+            <p><strong>Date:</strong> Saturday, 23rd November, 2024</p>
+            <p><strong>Venue:</strong> St. John International Hall, Owerri</p>
+            <p><strong>Time:</strong> 9:00 AM - 4:00 PM</p>
+        </div>
+
+        <div class="card">
+            <h2>Why This Conference Matters</h2>
+            <p>It's no longer news that the social care system has revolutionized, transforming caregiving into a professional career path with global opportunities. Whether you're aspiring to work internationally or establish yourself in Nigeria, this conference is your gateway to excellence in caregiving.</p>
+        </div>
+
+        <div class="card">
+            <h2>What You'll Learn</h2>
+            <ul style="list-style: none; padding: 1rem;">
+                <li>✓ Essential Caregiving Duties and Standards</li>
+                <li>✓ Hands-On Practical Skills</li>
+                <li>✓ International Caregiving Opportunities</li>
+                <li>✓ Professional Development Pathways</li>
+                <li>✓ Financial Opportunities in the Care Industry</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div id="registrationModal">
+    <div class="modal-content">
+        <span class="close-button" onclick="hideRegistration()">&times;</span>
+        <h2>Registration Details</h2>
+        <div class="bank-details">
+            <h3>Payment Information</h3>
+            <p><strong>Amount:</strong> ₦10,000</p>
+            <p><strong>Bank Name:</strong> United Bank of Africa</p>
+            <p><strong>Account Name:</strong> Geramex Mobile Rehab Concept</p>
+            <p><strong>Account Number:</strong> 1022715118</p>
+        </div>
+        <p style="color: var(--primary); margin-top: 1rem;">
+            After making payment, please save your transaction reference for verification at the event.
+        </p>
+        <div style="text-align: center; margin-top: 2rem;">
+            <button onclick="confirmPayment()" class="cta-button">I've Made Payment</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function showRegistration() {
+    document.getElementById('registrationModal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function hideRegistration() {
+    document.getElementById('registrationModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function confirmPayment() {
+    alert('Thank you for registering! Please keep your payment reference safe. We look forward to seeing you at the conference.');
+    hideRegistration();
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('registrationModal');
+    if (event.target == modal) {
+        hideRegistration();
+    }
+}
+
+// Smooth scroll animation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Add animation to cards on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+document.querySelectorAll('.card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'all 0.6s ease-out';
+    observer.observe(card);
+});
+</script>
+
+</body></html>
